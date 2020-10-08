@@ -1,0 +1,17 @@
+$base-color: rgb(219, 36, 42);
+
+.header {
+    border: none solid $base-color;
+    background: $base-color;
+
+    &__site-name {
+        padding: .4em 0;
+        color: rgb(255, 255, 255);
+        font-size: 4.8vh;
+        text-align: center;
+        
+        &:hover {
+            cursor: pointer;
+        } 
+    }
+}
