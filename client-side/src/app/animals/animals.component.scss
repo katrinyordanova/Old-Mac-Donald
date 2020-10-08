@@ -1,0 +1,16 @@
+@import '../../styles.scss';
+
+.animals {
+    text-align: center;
+    
+    &__heading {
+        color: rgb(51, 51, 51);
+        margin: .7em 0 .4em;
+        text-decoration: underline $base-color;
+    }
+
+    &__end-of-song {
+        margin: -.2em 0 1em;
+        color: $base-color;
+    }
+}
