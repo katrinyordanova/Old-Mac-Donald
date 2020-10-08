@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-$base-color: rgb(219, 36, 42);
+$base-color: rgb(102, 65, 47);
 
 * {
     margin: 0;
@@ -10,4 +10,9 @@ $base-color: rgb(219, 36, 42);
 html {
     font-family: 'Piazzolla', serif;
     cursor: default;
+    background: url(https://www.storynory.com/wp-content/uploads/2019/07/macdonald.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
