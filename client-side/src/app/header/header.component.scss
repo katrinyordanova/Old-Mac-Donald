@@ -5,11 +5,13 @@ $base-color: rgb(219, 36, 42);
     background: $base-color;
 
     &__site-name {
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        font-size: 4.8vh;
         padding: .4em 0;
         color: rgb(255, 255, 255);
-        font-size: 4.8vh;
-        text-align: center;
-        
+
         &:hover {
             cursor: pointer;
         } 
