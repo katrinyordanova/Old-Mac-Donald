@@ -1,4 +1,4 @@
-$base-color: rgb(219, 36, 42);
+@import '../../styles.scss';
 
 .header {
     border: none solid $base-color;
@@ -8,7 +8,7 @@ $base-color: rgb(219, 36, 42);
         display: block;
         text-decoration: none;
         text-align: center;
-        font-size: 4.8vh;
+        font-size: 3.6vh;
         padding: .4em 0;
         color: rgb(255, 255, 255);
 
