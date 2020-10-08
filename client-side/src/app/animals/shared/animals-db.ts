@@ -7,7 +7,7 @@ export let Animals_DB = {
             sound: 'moo'
         }, 
         {
-            name: 'chicks',
+            name: 'chicken',
             sound: 'cluck'
         },
         {
