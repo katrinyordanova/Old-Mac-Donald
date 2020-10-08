@@ -1,1 +1,5 @@
-<p>animals works!</p>
+<div class="animals">
+    <ng-container *ngFor="let animal of animals">
+        <app-animal [animal]="animal"></app-animal>
+    </ng-container>
+</div>
