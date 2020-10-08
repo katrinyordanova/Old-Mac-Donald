@@ -3,11 +3,11 @@
 .header {
     border: none solid $base-color;
     background: $base-color;
+    text-align: center;
 
     &__site-name {
-        display: block;
+        display: inline-block;
         text-decoration: none;
-        text-align: center;
         font-size: 3.6vh;
         padding: .4em 0;
         color: rgb(255, 255, 255);
