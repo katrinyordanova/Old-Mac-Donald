@@ -4,7 +4,7 @@
     border: none solid $base-color;
     background: $base-color;
     text-align: center;
-    
+
     &__site-name,
     &__buttons {
         display: inline-block;
@@ -27,16 +27,16 @@
 
     &__buttons {
         float: right;
-        margin: .7em;
+        margin: .8em;
 
         &__add-animal {
-            font-size: 3.1vh;
+            font-size: 2.7vh;
             border: none;
             border-radius: .5em;
             padding: .3em;
-            background: $base-color;
             color: $base-color;
             background: rgb(255, 255, 255);
+            max-width: 100%;
 
             &:hover {
                 cursor: pointer;
