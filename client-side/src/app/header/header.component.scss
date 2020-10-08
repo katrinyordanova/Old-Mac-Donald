@@ -4,16 +4,44 @@
     border: none solid $base-color;
     background: $base-color;
     text-align: center;
+    
+    &__site-name,
+    &__buttons {
+        display: inline-block;
+    }
+    
+    &__site-name,
+    &__buttons__add-animal {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
 
     &__site-name {
-        display: inline-block;
-        text-decoration: none;
         font-size: 3.6vh;
-        padding: .4em 0;
-        color: rgb(255, 255, 255);
+        padding: .4em 0 .4em 6em;
 
         &:hover {
             cursor: pointer;
         } 
+    }
+
+    &__buttons {
+        float: right;
+        margin: .7em;
+
+        &__add-animal {
+            font-size: 3.1vh;
+            border: none;
+            border-radius: .5em;
+            padding: .3em;
+            background: $base-color;
+            color: $base-color;
+            background: rgb(255, 255, 255);
+
+            &:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+        }
     }
 }
