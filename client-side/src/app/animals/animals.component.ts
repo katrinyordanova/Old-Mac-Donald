@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Animal } from './shared/animal';
+import { AnimalService } from './shared/animal.service';
 
 @Component({
   selector: 'app-animals',
@@ -6,10 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./animals.component.scss']
 })
 export class AnimalsComponent implements OnInit {
+  animals: Animal[];
 
-  constructor() { }
+  constructor(public animalService: AnimalService) { }
 
   ngOnInit(): void {
+    this.animals = this.animalService.getAnimals();
   }
 
 }
