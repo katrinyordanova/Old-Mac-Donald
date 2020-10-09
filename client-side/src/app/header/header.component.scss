@@ -3,6 +3,10 @@
 .header {
     border: none solid $base-color;
     background: $base-color;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2000;
 
     &__site-name,
     &__buttons {
@@ -16,8 +20,8 @@
     }
 
     &__site-name {
-        font-size: 3.6vh;
-        padding: .4em 0 .4em 6em;
+        font-size: 3vh;
+        padding: .4em 0 .4em 7em;
 
         &:hover {
             cursor: pointer;
