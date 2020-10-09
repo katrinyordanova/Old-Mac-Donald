@@ -7,11 +7,6 @@
     top: 0;
     width: 100%;
     z-index: 2000;
-
-    &__site-name,
-    &__buttons {
-        display: inline-block;
-    }
     
     &__site-name,
     &__buttons__add-animal {
@@ -20,8 +15,12 @@
     }
 
     &__site-name {
-        font-size: 3vh;
-        padding: .4em 0 .4em 7em;
+        font-size: 4.3vh;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
 
         &:hover {
             cursor: pointer;
@@ -33,7 +32,7 @@
         margin: .8em;
 
         &__add-animal {
-            font-size: 2.7vh;
+            font-size: 3.3vh;
             border: none;
             border-radius: $border-radius;
             padding: .3em;
