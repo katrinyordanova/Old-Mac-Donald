@@ -1,7 +1,9 @@
+@import '../../../styles.scss';
+
 .animal__verse {
     margin: 0 auto;
     padding: .5em 0;
     width: 28em;
     background: rgb(224, 228, 227);
-    border-radius: .5em;
+    border-radius: $border-radius;
 }

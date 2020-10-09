@@ -1,5 +1,7 @@
 @import '../../styles.scss';
 
+@import '../../styles.scss';
+
 .animals {    
     &__heading {
         color: rgb(237, 251, 251);
@@ -14,6 +16,6 @@
         background: rgb(224, 228, 227);
         margin: 0 auto 1em auto;
         width: 10em;
-        border-radius: .5em;
+        border-radius: $border-radius;
     }
 }
