@@ -3,8 +3,10 @@
 .animal__verse {
     margin: 0 auto;
     padding: .5em 0;
-    width: 24em;
+    width: 31vw;
     background: rgb(224, 228, 227);
     border-radius: $border-radius;
-    font-size: 1.3em;
+    font-size: $base-color-font-size;
+    min-width: 210px;
+    color: rgb(71, 46, 33)
 }

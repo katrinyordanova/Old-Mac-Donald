@@ -1,21 +1,23 @@
 @import '../../styles.scss';
 
-@import '../../styles.scss';
-
-.animals {    
+.animals {   
+    margin: 4.5em 0 2em 0;
+    
     &__heading {
         color: rgb(237, 251, 251);
-        margin: .65em 0 .4em;
+        margin: .65em 0 .4em 0;
         text-decoration: underline rgb(119, 76, 55);
         text-shadow: 0px 0px 2px rgb(82, 80, 80, 0.41);
-        font-size: 1.7em;
+        font-size: 4vh;
+        text-align: center;
     }
-    
+
     &__end-of-song {
         color: rgb(71, 46, 33);
         background: rgb(224, 228, 227);
-        margin: 0 auto 1em auto;
+        margin: 0 auto;
         width: 10em;
         border-radius: $border-radius;
+        font-size: $base-color-font-size;
     }
 }
