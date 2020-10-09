@@ -1,1 +1,21 @@
-<p>add-animal works!</p>
+<div class="add-animal">
+    <h2 class="add-animal__heading">Here you can enter an animal and its sound to generate a verse of the song Old Mac Donald!</h2>
+    <form #animalForm="ngForm" (ngSubmit)="addAnimalHandler(name, sound)" class="add-animal__form">
+        <div class="add-animal__form__animal-name">
+            <label class="add-animal__form__animal-name__label" for="name">Animal name:</label>
+            <input class="add-animal__form__animal-name__input" [(ngModel)]="name" name="name" type="text" id="name" required>
+        </div>
+        <div class="add-animal__form__animal-sound">
+            <label class="add-animal__form__animal-sound__label" for="sound">Animal sound:</label>
+            <input class="add-animal__form__animal-sound__input" [(ngModel)]="sound" name="sound" type="text" id="sound" required>
+        </div>
+        <div class="add-animal__form__button">
+            <button class="add-animal__form__button__add-animal" [disabled]="animalForm.invalid">Add</button>
+        </div>
+    </form>
+</div>
+<div *ngIf="givenAnimals" class="animals">
+    <ng-container *ngFor="let animal of animals">
+        <app-animal [animal]="animal"></app-animal>
+    </ng-container>
+</div>
