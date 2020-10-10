@@ -3,7 +3,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { AnimalsComponent } from './animals.component';
 
 describe('AnimalsComponent', () => {
-  let component: AnimalsComponent;
+  let animalsComponent: AnimalsComponent;
   let fixture: ComponentFixture<AnimalsComponent>;
 
   beforeEach(async () => {
@@ -15,11 +15,19 @@ describe('AnimalsComponent', () => {
 
   beforeEach(() => {
     fixture = TestBed.createComponent(AnimalsComponent);
-    component = fixture.componentInstance;
+    animalsComponent = fixture.componentInstance;
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
+  it('should create component', () => {
+    expect(animalsComponent).toBeTruthy();
+  });
+
+  it('should have an animal object', () => {
+    expect(animalsComponent.animals).toBeDefined();
+  });
+
+  it('should have an animals array with length 5', () => {
+    expect(animalsComponent.animals.length).toBeLessThanOrEqual(5);
   });
 });
