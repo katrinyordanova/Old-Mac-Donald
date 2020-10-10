@@ -1,9 +1,9 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { RouterLinkDirectiveStub } from ''
 import { HeaderComponent } from './header.component';
 
 describe('HeaderComponent', () => {
-  let component: HeaderComponent;
+  let headerComponent: HeaderComponent;
   let fixture: ComponentFixture<HeaderComponent>;
 
   beforeEach(async () => {
@@ -15,11 +15,11 @@ describe('HeaderComponent', () => {
 
   beforeEach(() => {
     fixture = TestBed.createComponent(HeaderComponent);
-    component = fixture.componentInstance;
+    headerComponent = fixture.componentInstance;
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
+  it('should instantiate component', () => {
+    expect(headerComponent).not.toBeNull();
   });
 });
