@@ -1,16 +1,19 @@
 import { TestBed } from '@angular/core/testing';
-
 import { AnimalService } from './animal.service';
 
 describe('AnimalService', () => {
-  let service: AnimalService;
+  let animalService: AnimalService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(AnimalService);
+    animalService = new AnimalService();
   });
 
   it('should be created', () => {
-    expect(service).toBeTruthy();
+    expect(animalService).toBeTruthy();
+  });
+
+  it('#getAnimals should be bigger than 5', () => {
+    expect(animalService.getAnimals().length).toBeGreaterThanOrEqual(5);
   });
 });
