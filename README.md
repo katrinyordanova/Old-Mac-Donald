@@ -2,7 +2,7 @@
 
 ## Description
 
-Single Page Application which
+A Single Page Application which
 
 * shows five verses of the nursery rhyme "Old Mac Donald Had a Farm" with five animals
 * generates a rhyme with given animal name and sound
@@ -10,7 +10,7 @@ Single Page Application which
 The verse is repeated for each animal and its sound. 
 
 ## Example
-For example if we give the name "cat" and sound "meow", the verse will be
+If we give the name "cat" and sound "meow", the verse will be
 
 ```
 Old MACDONALD had a farm, E-I-E-I-O
@@ -35,4 +35,8 @@ npm install
 2. Run Angular application
 ```
 ng serve
+```
+3. Test application
+```
+ng test
 ```
