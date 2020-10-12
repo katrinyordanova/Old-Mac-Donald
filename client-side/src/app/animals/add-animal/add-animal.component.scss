@@ -6,7 +6,8 @@
     color: $base-text-color;
     border-radius: $border-radius;
     background: rgb(224, 228, 227);
-    min-width: 210px;
+    min-width: 220px;
+    max-width: 300px;
 
     &__heading {
         margin-bottom: .5em;
